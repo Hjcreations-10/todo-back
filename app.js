@@ -10,7 +10,7 @@ app.use(express.json())
 app.use(cors())
 
 // to POST data
-/*app.post('/api/addtask', (req, res, next)=>{
+app.post('/api/addtask', (req, res, next)=>{
     console.log(req.body)
  const {task,status,deadline} = req.body;
  
@@ -22,7 +22,7 @@ app.use(cors())
 
  tas.save()
  return res.status(200).json({message: "success"})
-})*/
+})
 
 
 
@@ -38,7 +38,7 @@ app.use(cors())
 //     }
 //     return res.status(200).json({tas})
 // })
-app.get('/api/getTask', async (req, res, next) => {
+/*app.get('/api/getTask', async (req, res, next) => {
     let tas;
     try {
         tas = await tasks.find();
@@ -50,7 +50,7 @@ app.get('/api/getTask', async (req, res, next) => {
         return res.status(404).json({ message: "No task Found." });
     }
     return res.status(200).json({ tas });
-});
+});*/
 
 
 // delete student
