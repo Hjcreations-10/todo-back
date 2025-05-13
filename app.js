@@ -10,7 +10,7 @@ app.use(express.json())
 app.use(cors())
 
 // to POST data
-app.post('/api/addtask', (req, res, next)=>{
+/*app.post('/api/addtask', (req, res, next)=>{
     console.log(req.body)
  const {task,status,deadline} = req.body;
  
@@ -113,7 +113,7 @@ app.put('/api/edit_task/:id', async (req, res, next)=>{
     }
     return res.status(200).json({tsk})
 })
-// end edit user
+// end edit user*/
 
 //database connection
 
