@@ -22,7 +22,7 @@ app.use(cors())
 
  tas.save()
  return res.status(200).json({message: "success"})
-})
+})*/
 
 
 
@@ -113,7 +113,7 @@ app.put('/api/edit_task/:id', async (req, res, next)=>{
     }
     return res.status(200).json({tsk})
 })
-// end edit user*/
+// end edit user
 
 //database connection
 
